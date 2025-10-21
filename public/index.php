@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
@@ -19,5 +20,17 @@ switch ($page) {
         break;
     case 'delete':
         $todoController->delete();
+        break;
+    case 'delete':
+        $todoController->delete();
+        break;
+    case 'show':
+        $todoController->show();
+        break;
+    case 'show':
+        $todoController->show();
+        break;
+    case 'saveSortOrder':
+        $todoController->saveSortOrder();
         break;
 }
