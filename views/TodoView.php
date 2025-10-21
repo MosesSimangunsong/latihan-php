@@ -34,7 +34,7 @@
                 <input type="hidden" name="page" value="index">
                 <div class="col-md-4">
                     <label for="filter" class="form-label">Filter Status</label>
-                    <select name="filter" id="filter" class="form-select">
+                    <select name="filter" id="filter" class="form-select" onchange="this.form.submit()">
                         <option value="all" <?= ($filter === 'all') ? 'selected' : '' ?>>Semua</option>
                         <option value="unfinished" <?= ($filter === 'unfinished') ? 'selected' : '' ?>>Belum Selesai</option>
                         <option value="finished" <?= ($filter === 'finished') ? 'selected' : '' ?>>Selesai</option>
@@ -46,7 +46,7 @@
                            placeholder="Ketik judul atau deskripsi..." value="<?= htmlspecialchars($search) ?>">
                 </div>
                 <div class="col-md-2">
-                    <button type="submit" class="btn btn-secondary w-100">Filter / Cari</button>
+                    <button type="submit" class="btn btn-secondary w-100">Cari</button>
                 </div>
             </form>
             <table class="table table-striped">
