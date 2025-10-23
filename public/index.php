@@ -21,12 +21,6 @@ switch ($page) {
     case 'delete':
         $todoController->delete();
         break;
-    case 'delete':
-        $todoController->delete();
-        break;
-    case 'show':
-        $todoController->show();
-        break;
     case 'show':
         $todoController->show();
         break;
